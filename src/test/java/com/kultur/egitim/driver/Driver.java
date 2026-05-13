@@ -23,6 +23,7 @@ public class Driver {
     @BeforeEach
     public void beforeEach() {
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--incognito");
         options.addArguments("disable-translate");
         options.addArguments("disable-plugins");
         options.addArguments("--disable-notifications");
